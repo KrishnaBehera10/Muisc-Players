@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #212121;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  //   background-color: rgba($color: #231123, $alpha: 1);
+  .content {
+    width: 100%;
+    height: 100%;
+
+    .leftside {
+      display: none;
+    }
+    .rightside {
+      padding: 15px;
+      width: 100%;
+      height: 100%;
+      background-color: #1a1a18;
+      position: relative;
+
+      h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 50px 0px;
+      }
+      .latest {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding: 12px 0;
+        border-bottom: 1px solid white;
+        width: min-content;
+      }
+      .song_list {
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        li {
+          font-size: 0.8rem;
+          white-space: wrap;
+          list-style: none;
+          cursor: pointer;
+          opacity: 0.2;
+        }
+        .active {
+          opacity: 1;
+        }
+      }
+      .muisc_pay {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+
+        .music_player {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 150px;
+          background-color: #1a1a18;
+
+          img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: center;
+          }
+          .btn {
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            button {
+              border: none;
+              background-color: transparent;
+              color: white;
+              cursor: pointer;
+            }
+            .play {
+              border: 1px solid white;
+              width: 45px;
+              aspect-ratio: 1/1;
+              border-radius: 50px;
+            }
+          }
+        }
+        .demo {
+          width: 150px;
+        }
+        .progress-bar {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          flex-grow: 1;
+          gap: 20px;
+          width: 150px;
+
+          #progress {
+            height: 3px;
+            width: 80%;
+          }
+          .title {
+            font-size: 0.8rem;
+            padding: 0px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    .content {
+      display: flex;
+      justify-content: space-between;
+      .leftside {
+        display: flex;
+        align-items: stretch;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .rightside {
+        padding: 25px 80px;
+        h1 {
+          font-size: 3rem;
+        }
+        .muisc_pay {
+          .music_player {
+            width: 200px;
+          }
+          .demo {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

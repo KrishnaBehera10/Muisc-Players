@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muisc player</title>
+    <link rel="icon" href="asset/music.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="leftside">
+          <img
+            src="https://images.unsplash.com/photo-1724885794747-f4fb4dd8d0f2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div>
+        <div class="rightside">
+          <div>
+            <h1>Song Player</h1>
+            <p class="latest">Latest</p>
+          </div>
+          <div class="song_list"></div>
+          <div class="muisc_pay">
+            <div class="music_player">
+              <img
+                src="https://images.unsplash.com/photo-1746264726380-cb3186610ef0?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="music_image"
+              />
+              <div class="btn">
+                <button class="previous">
+                  <i class="ri-skip-left-fill"></i>
+                </button>
+                <button class="play">
+                  <i class="ri-play-fill"></i>
+                  <!-- <i class="ri-pause-line"></i> -->
+                </button>
+                <button class="next"><i class="ri-skip-right-fill"></i></button>
+              </div>
+            </div>
+            <div class="demo"></div>
+            <div class="progress-bar">
+              <p class="title"></p>
+              <input type="range" id="progress" value="0" />
+            </div>
+            <audio id="audio"></audio>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
