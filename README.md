@@ -14,6 +14,6 @@ A simple and responsive music player built using **HTML**, **CSS**, and **JavaSc
 - JavaScript (OOP based)
 
 ### Live Demo:
-[Click here to view](https://krishnabehera10.github.io/Music-playlist-manager/)
+[Click here to view](https://krishnabehera10.github.io/Muisc-Players/)
 
 ---
